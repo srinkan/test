@@ -1,0 +1,7 @@
+import os
+ip_machine = "192.168.223.35"
+response = os.system("ping -c 4 " + ip_machine)
+if response == 0:
+    pingstatus = "Network Active"
+else:
+    pingstatus = "Network Error"
